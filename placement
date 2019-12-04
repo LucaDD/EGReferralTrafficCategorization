@@ -1,0 +1,14 @@
+CASE [utm_content]
+WHEN "header-btn" THEN "header"
+WHEN "header" THEN "header"
+WHEN "hcom_header" THEN "header"
+WHEN "BEX_header" THEN "header"
+WHEN "footer-btn" THEN "footer"
+WHEN "footer" THEN "footer"
+WHEN "footer-eps" THEN "footer"
+WHEN "hcom_footer" THEN "footer"
+WHEN "BEX_footer" THEN "footer"
+WHEN "sidebar" THEN "sidebar"
+WHEN "Banner" THEN "banner"
+ELSE "NA"
+END
