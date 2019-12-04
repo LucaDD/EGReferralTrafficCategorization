@@ -1,4 +1,4 @@
-CASE [EG Referral POSa Gemini Net]
+CASE [utm_source]
 WHEN "advertising.expedia.com" THEN "na"
 WHEN "wwwcheapticketscom-en_US" THEN "us"
 WHEN "citibanamexexpediamx-es_MX" THEN "mx"
