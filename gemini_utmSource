@@ -1,0 +1,5 @@
+IF CONTAINS([utm_source], "gemini") then "gemini"
+
+else "noGemini"
+
+end
