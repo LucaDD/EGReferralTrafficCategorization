@@ -1,0 +1,68 @@
+IF CONTAINS(LOWER([utm_campaign]), "homepage")THEN "HP"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "home")THEN "HP"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "flights")THEN "Flight"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "flight")THEN "Flight"
+ELSEIF CONTAINS([utm_campaign], "vuelos")THEN "Flight"
+ELSEIF CONTAINS([utm_campaign], "gptms")THEN "Flight"
+ELSEIF CONTAINS([utm_campaign], "fluege")THEN "Flight"
+ELSEIF CONTAINS([utm_campaign], "fluge")THEN "Flight"
+ELSEIF CONTAINS([utm_campaign], "voli")THEN "Flight"
+ELSEIF CONTAINS([utm_campaign], "vol")THEN "Flight"
+ELSEIF CONTAINS([utm_campaign], "voos")THEN "Flight"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "hotel")THEN "Hotel"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "hotels")THEN "Hotel"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "searchresults")THEN "Hotel"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "search-results")THEN "Hotel"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "hotel")THEN "Hotel"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "booking_cancellation")THEN "Hotel"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "booking_change")THEN "Hotel"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "bookingdetails")THEN "Hotel"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "booking-success-confirmation")THEN "Hotel"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "email")THEN "Email"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "flug-und-hotel")THEN "DP"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "holiday-package")THEN "DP"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "vacation-packages")THEN "DP"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "user")THEN "PCC"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "signup")THEN "PCC"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "account_summary")THEN "PCC"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "bookinglist")THEN "PCC"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "signin")THEN "PCC"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "forgottenpassword")THEN "PCC"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "login")THEN "PCC"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "trips")THEN "Trips"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "deal")THEN "Deal"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "pwa")THEN "PWA"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "app")THEN "App"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "car")THEN "Car"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "autos")THEN "Car"
+ELSEIF CONTAINS(LOWER([utm_campaign]), "noleggio-auto")THEN "Car"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "cruise")THEN "Cruise"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "reward")THEN "Reward"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "scratchpad")THEN "Scratchpad"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "sidebar")THEN "Sidebar"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "service")THEN "Service"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "things_to_do")THEN "Things_To_Do"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "travelguide")THEN "Travel_Guide"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "vacation-rentals")THEN "VR"
+
+ELSEIF CONTAINS(LOWER([utm_campaign]), "other")THEN "Other"
+
+ELSE "Other"
